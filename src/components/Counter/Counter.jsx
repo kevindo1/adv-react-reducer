@@ -38,20 +38,6 @@ export default function Counter() {
   // const [currentColor, setCurrentColor] = useState(pinkRGB)
   const [state, dispatch] = useReducer(countReducer, initialState)
 
-  // useEffect(() => {
-  //   if (count === 0) {
-  //     setCurrentColor(pinkRGB)
-  //   }
-
-  //   if (count > 0) {
-  //     setCurrentColor(`rgb(52, 211, 153)`)
-  //   }
-
-  //   if (count < 0) {
-  //     setCurrentColor(`rgb(239, 68, 68)`)
-  //   }
-  // }, [count])
-
   const increment = () => {
     dispatch({
       type: 'increment',
